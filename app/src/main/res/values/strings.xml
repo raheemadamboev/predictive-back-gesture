@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Predective Back Gesture</string>
+
+    <!-- Main -->
+    <string name="your_press_count">Press back button %1$s times in order to go back</string>
+    <string name="go_back">Go back</string>
 </resources>
