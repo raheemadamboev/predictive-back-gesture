@@ -1,4 +1,4 @@
-package xyz.teamgravity.predectivebackgesture.ui.theme
+package xyz.teamgravity.predectivebackgesture.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
