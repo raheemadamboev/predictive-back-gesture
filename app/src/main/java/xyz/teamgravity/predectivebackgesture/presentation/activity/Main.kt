@@ -31,7 +31,7 @@ class Main : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val dispatcher = LocalOnBackPressedDispatcherOwner.current!!.onBackPressedDispatcher
+                    val dispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
                     var countdown by remember { mutableStateOf(3) }
 
                     BackHandler(enabled = countdown != 0) {
@@ -47,8 +47,8 @@ class Main : ComponentActivity() {
                             text = stringResource(id = R.string.your_press_count, countdown),
                             modifier = Modifier.padding(horizontal = 10.dp)
                         )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Button(onClick = { dispatcher.onBackPressed() }) {
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Button(onClick = { dispatcher?.onBackPressed() }) {
                             Text(text = stringResource(id = R.string.go_back))
                         }
                     }
