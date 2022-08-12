@@ -44,7 +44,7 @@ class Main : ComponentActivity() {
                         modifier = Modifier.fillMaxSize()
                     ) {
                         Text(
-                            text = stringResource(id = R.string.your_press_count, countdown),
+                            text = stringResource(id = R.string.your_press_count, countdown.toString()),
                             modifier = Modifier.padding(horizontal = 10.dp)
                         )
                         Spacer(modifier = Modifier.height(16.dp))
